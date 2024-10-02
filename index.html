@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h2 {
+            font-size: 1.5rem;
+            color: black;
+            text-align: center;
+            
+        }
+
+        p {
+            font-variant: italic;
+        }
+        
+        .logo {
+            width: 7%;
+            height: auto;
+            position: fixed;
+            border-radius: 8px;
+        }
+        .InsideContent{
+            display:inline-block;
+            display: block;
+        }
+
+        #intro { 
+            display: inline;
+        }
+        
+        
+        nav ul {
+         display: flex;
+         list-style-type: none;
+         padding: 14px 16px;
+         margin: 0 auto;
+         width: 500px;
+         text-align: center;
+         justify-content: center;
+      }
+
+      li:last-child {
+            border-right: none;
+        }
+        li a {
+            color: white;
+            padding: 14px 16px;
+        }
+        li a:hover {
+            background-color: grey;
+        }
+      
+
+        a {
+            text-decoration: none;
+        }
+        .navigation {
+        position: fixed;
+        top: 6;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        font-size: 20px;
+    
+        list-style-type: none;
+        }
+        
+        
+        header {
+            display: flex;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+           
+        }
+
+        
+
+        .navid {
+            background-color: grey;
+            text-align: center;
+            color: black;
+            height: 100vh;
+            flex: 0 0 20%;
+            padding: 50;
+            
+            
+        }
+
+        .navid ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 1;
+           
+        }
+
+        main {
+            flex: 0 1 60%;
+        }
+
+        .profile-image {
+            display: block;
+            margin-left: 50;
+            margin-right: 50;
+            width: 200px; 
+            height: 200px;
+            border-radius: 50px;
+            margin-top: 5px;
+        }
+        .main-content {
+            padding: 10px;
+            height: 1000;
+            border: white;
+            width: 50%;
+            background-color:white;
+            flex: 0 1 60%;
+            align-self: center;
+        }
+        .main-container {
+           display: flex;
+           flex-direction: row;
+           margin-top: 100px;
+           
+            
+        }
+        .list-of-skills {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+        }
+        
+        .list-of-skills li {
+            text-align: left; 
+            list-style-type: square;
+            
+            
+        }
+        body {
+            background-color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+        }
+        
+        .name {
+            
+            display: block;
+            margin-left: 50;
+            margin-right: 50;
+            
+        }
+        .body {
+           display: flex; 
+           float: left;
+           top: -5px;
+           display:block ;
+           width: 80%;
+           margin: 1;
+           height: 1050;
+           
+          
+       }
+        
+        .intro-section {
+            align-self: center; 
+            
+        }
+
+        table, th, td {
+            border: 2px solid;
+            border-collapse: collapse;
+            
+        }
+
+       
+        
+
+        .career-summary tr:nth-child(even) {
+            background-color:  grey;
+        }
+
+        .work-experience tr:nth-child(even) {
+            background-color:  grey;
+        }
+        .career-summary {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .intro-section hr{
+            border-top: 10px solid black;
+            
+        }
+        .main-container hr{
+            border-top: 5px solid black;
+            width: 100px;
+        }
+        
+        #education {
+            margin-left: 225px;
+           margin-right: 200px;
+        }
+        
+        #Education {
+            text-align: center;
+        }
+        .education tr:nth-child(even) {
+            background-color:  grey;
+        }
+
+        .qualifications tr:nth-child(even) {
+            background-color:  grey;
+        }
+        #work-experience {
+            margin-left: 100px;
+           margin-right: 100px;
+        }
+        #Work-Experience {
+            text-align: center;
+        }
+        ol {
+            list-style-type: upper-roman;
+        }
+        #qualifications {
+            margin-left: 450px;
+           
+        }
+        #qualification-title {
+            text-align: center;
+           
+        }
+        #project {
+            text-align: center;
+        }
+        .activities {
+            text-align: center;
+            list-style-position: inside;
+            border: 5px solid black;
+            border-radius: 5px;
+            
+        }
+        .border {
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 6px;
+            margin: 5px;
+            padding: 7px;
+        }
+        
+        .projects tr:nth-child(even) {
+            background-color:  grey;
+        }
+        .hiking {
+            width:200px;
+            height:300px;
+            
+            border-radius: 50%;
+
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div id="divTable" class="InsideContent">
+    <link rel="shortcut icon" type="image/png" href="JD.png">
+    
+</head>
+<body>
+    
+        <div id="container">
+            <header>
+                <div>
+                    <nav> 
+                    <ul class = "navigation">
+                        <li class = "navigation-list"><a href="#introduction">Introducation</a></li>
+                        <li class = "navigation-list"><a href="#career_summary"> Career Summary</a></li>
+                        <li class = "navigation-list" ><a href="#education_and_qualifications">Education and Qualifications</a></li>
+                        <li class = "navigation-list"><a href="#interests_and_hobbies">Interests and Hobbies</a></li>
+                      </ul>
+                    </nav>
+                    <div> 
+                      <img class="logo" src="Logo.png" alt="logo"  >
+                      </div>
+            </header>
+            
+            <div class = "main-container"> 
+                <div class = "navid">
+                    <section class = "body">  
+                        <ul class = "intro-section">
+                            <li><img src="image.png" class = "profile-image" alt="Profile Image" ></li>
+                                <li> <h2 class = "name" id = "introduction"> Jillian Berry </h2> </li>
+                                <li> <h2 class = "name" id = "introduction"> Computer Science Student </h2> </li>
+                                <li> <hr> </hr> </li>
+                                <li> <p class="intro-paragraph"> As a computer science student with a passion for data science, 
+                                I utilized my experience in data integrity and knowledge of statistical analysis to increase busines efficiency. 
+                                I have experience in C++, Java, Python, R, and SQL. I have utilized both R and Python specifically for large datasets
+                                to extract important intelligence to increase efficiency of business.</p></li> 
+                        </ul> 
+                
+                    </div>
+                    
+                </section>
+                <section>
+                <section  class = "border"> 
+                <div>
+                    <h2 class = "skills-list"> Skills </h2> 
+                    <hr> </hr>
+                    <ul > 
+                            <li class = "list-of-skills" > C++ </li>
+                            <li class = "list-of-skills"> Java </li>
+                            <li class = "list-of-skills"> Python </li>
+                            <li class = "list-of-skills"> R </li>
+                            <li class = "list-of-skills"> SQL </li>
+                            <li class = "list-of-skills"> Machine Learning </li>
+                            <li class = "list-of-skills"> Statistical Analysis </li>
+                            <li class = "list-of-skills"> Jupyter Notebook </li>
+                        </ul>
+                    </div>
+                </section><section class = "border">
+               
+                        <div> <h2 id="career_summary"> Career Summary</h2>
+                        <hr> </hr>
+                        <table class="career-summary"> 
+                        <caption>Career Summary</caption>
+                        <tr> 
+                            <th> Job Title</th>
+                            <th> Job Type </th>
+                            <th> Company</th>
+                            <th> Date </th>
+                            <th> Location </th>
+                            <th> Description</th>
+                        </tr>
+                        <tr>
+                            <td>Data Integrity Intern</td>
+                            <td> Internship </td>
+                            <td>A</td>
+                            <td>May 2023 - August 2023</td>
+                            <td> Remote</td>
+                            <td> <ul> 
+                                <li> Improved the onboarding process by adding and editing content to enable efficient hiring practices </li>
+                                <li>Analyzed resumes to align skills with practice groups to increase utilization</li>
+                                <li>Updated the criteria for new projects in the CRM for accurate invoicing, timekeeping, and reporting</li>
+                                <li>Audited project data to capture information to update the project management system</li>
+                                <li>Learned basic SQL to document the code that explained the functionality to a novice SQL user</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>Data Analyst</td>
+                        <td> Internship </td>
+                        <td>GWC</td>
+                        <td>May 2022 - August 2022</td>
+                        <td> Remote</td>
+                        <td> <ul> 
+                            <li> Learned the fundamentals of Python coding language to create a chatbot for book recommendations </li>
+                            <li>Wrote Python code to analyze COVID-19 RNA </li>
+                            <li>Learned about connecting computer science and biology</li>
+                            <li>Utilized R programming language to visualize the data of a Covid-19 study</li>
+                            <li>Audited project data to capture information to update the project management system</li>
+                            <li>Learned basic SQL to document the code that explained the functionality to a novice SQL user</li>
+            
+                            </ul>
+                            </td>
+                      </tr>
+                      <tr>
+                        <td>Clean Water Ambassador</td>
+                        <td> Internship </td>
+                        <td>King County Waste Management</td>
+                        <td>July 2020- August 2020</td>
+                        <td> Remote</td>
+                        <td> <ul> 
+                            <li>Learned about water treatment processes, ecological systems, and conservation </li>
+                            <li> Completed leadership training.</li>
+                            </ul>
+                            </td>
+                      </tr>
+                      
+            
+                </table></div>
+            </section><section >
+                
+                <div> 
+                    <h2 id = "education_and_qualifications"> Education and Qualifications </h2>
+                    <section  class = "border">  
+                    <h3 id = "Education" > Education </h3>
+                    <table id = "education" class = "education"> 
+                    <caption>Education</caption>
+                    <tr> 
+                        <th> Type</th>
+                        <th> Major</th>
+                        <th> Minor</th>
+                        <th> School</th><th> Date</th>
+            
+                    </tr>
+                        <tr><td>Bachelors of Science</td>
+                        <td> Computer Science </td>
+                        <td>Data Science</td>
+                        <td> Gonzaga University</td>
+                        <td>August 2022 - May 2026</td>
+                     </tr>
+                    <tr>
+                         <td>STEM Honors Highschool Diploma</td>
+                        <td>Biotechnology and Engineering</td>
+                        <td>N/A</td>
+                        <td>Hawks Highschool</td>
+                        <td>August 2018 - May 2022</td>
+                    </tr>
+                </table>
+          
+            </section> 
+           
+    <section class = "border"> 
+    <h3 id ="Work-Experience"> Work Experience </h3>
+    <table id = "work-experience" class = "work-experience">  
+        
+        <caption >Work Experience</caption>
+        <tr> 
+            <th> Job Title</th>
+            <th> Job Type </th>
+            <th> Company</th>
+            <th> Date </th>
+            <th> Location </th>
+            <th> Description</th>
+        </tr>
+        <tr>
+            <td>Data Integrity Intern</td>
+            <td> Internship </td>
+            <td>A</td>
+            <td>May 2023 - August 2023</td>
+            <td> Remote</td>
+            <td> <ul> 
+                <li> Improved the onboarding process by adding and editing content to enable efficient hiring practices </li>
+                <li>Analyzed resumes to align skills with practice groups to increase utilization</li>
+                <li>Updated the criteria for new projects in the CRM for accurate invoicing, timekeeping, and reporting</li>
+                <li>Audited project data to capture information to update the project management system</li>
+                <li>Learned basic SQL to document the code that explained the functionality to a novice SQL user</li>
+                </ul>
+                </td>
+          </tr><tr><td>Data Analyst</td>
+            <td> Internship </td>
+            <td>GWC</td>
+            <td>May 2022 - August 2022</td>
+            <td> Remote</td>
+            <td> <ul> 
+                <li> Learned the fundamentals of Python coding language to create a chatbot for book recommendations 
+                <li>Wrote Python code to analyze COVID-19 RNA </li>
+                <li>Learned about connecting computer science and biology</li>
+                <li>Utilized R programming language to visualize the data of a Covid-19 study</li>
+                <li>Audited project data to capture information to update the project management system</li>
+                <li>Learned basic SQL to document the code that explained the functionality to a novice SQL user</li>
+                </ul>
+                </td>
+          </tr>
+    </table>
+</section>
+<section class ="border">
+        <h3 id="qualification-title" > Qualifications </h3>
+            <table id="qualifications" class = "qualifications"> 
+                <caption>Qualifications</caption>
+                <tr> 
+                    <th> Qualification/Award</th>
+                    <th> Company</th>
+                <th> Date </th>
+            </tr>
+            <tr>
+                <td>Data Science Certificate </td>
+                <td> IBM  </td>
+                <td>May 2024 - August 2024</td>
+            </tr>
+            <tr>
+                <td>Tableau</td>
+                <td> Salesforce </td>
+                <td>May 2023 - August 2023</td>
+            </tr>
+            <tr>
+                <td>Data Analyst Certificate</td>
+                <td>Purdue</td>
+                <td>May 2022 - August 2022</td>
+            </tr>
+        </table>
+    </section>
+    <section class ="border">
+        <h3 id="project">  Projects </h3>
+        <table class = "projects">
+            <caption>Projects</caption>
+                <tr> 
+                <th> Project Name</th>
+                <th> Date</th>
+            <th> Project Description </th>
+        </tr>
+        <tr>
+            <td>Thermodynamic and Kinetic Analysis of Microalgae Remediation of Phenol Red </td>
+            <td>September 2021 - April 2022</td>
+            <td> Utilized microalgae to clean up Phenol Red from water by looking at different concentrations and temperatures in 
+                how that impacted absorption by the microalgae. Data Analysis was performed to find the temperature that was most affected. </td>
+          </tr>
+          <tr>
+            <td>Uno</td>
+            <td>September 2023 - December 2023</td>
+            <td> Created a uno game using java script and a GUI. 
+          </tr>
+    </table>
+    </div>
+
+    </section>
+        <section class ="border">
+            <div class = "Interests"> 
+                    <h2  id = "interests_and_hobbies">Interests and Hobbies</h2>
+                    <ol class = "activities"> 
+                        <li>Hiking</li>
+                        <li>Walking my dog </li>
+                        <li>Crocheting</li>
+                        <li>Baking</li>
+                    </ol>  
+                    <h3> More Hiking Images </h3>
+                    <a href="https://jberry1103.github.io/HW2/hiking_images" target="_blank" rel="noopener noreferrer">
+                    <img src="hiking.JPG" alt="Hiking Image" class = "hiking"></a></div>
+        </div>
+        </section>
+        </div>
+        </div>
+    </section> 
+    
+</body>
+</html>
