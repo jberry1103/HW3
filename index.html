@@ -10,9 +10,7 @@
             
         }
 
-        p {
-            font-variant: italic;
-        }
+       
         
         .logo {
             width: 7%;
@@ -57,7 +55,7 @@
         }
         .navigation {
         position: fixed;
-        top: 6;
+        top: 6px;
         width: 100%;
         background-color: #333;
         text-align: center;
@@ -85,15 +83,15 @@
             color: black;
             height: 100vh;
             flex: 0 0 20%;
-            padding: 50;
+            padding: 2px;
             
             
         }
 
         .navid ul {
             list-style-type: none;
-            margin: 0;
-            padding: 1;
+            margin: 1;
+           
            
         }
 
@@ -103,8 +101,8 @@
 
         .profile-image {
             display: block;
-            margin-left: 50;
-            margin-right: 50;
+            margin-left: 25px;
+            margin-right: 25px;
             width: 200px; 
             height: 200px;
             border-radius: 50px;
@@ -112,7 +110,7 @@
         }
         .main-content {
             padding: 10px;
-            height: 1000;
+            height: 1000px;
             border: white;
             width: 50%;
             background-color:white;
@@ -138,27 +136,21 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
         }
         
-        .name {
-            
-            display: block;
-            margin-left: 50;
-            margin-right: 50;
-            
-        }
+        
         .body {
            display: flex; 
            float: left;
            top: -5px;
            display:block ;
            width: 80%;
-           margin: 1;
+           margin: 1px;
            height: 1050;
            
           
        }
         
         .intro-section {
-            align-self: center; 
+            text-align: center; 
             
         }
 
@@ -290,10 +282,10 @@
                     <section class = "body">  
                         <ul class = "intro-section">
                             <li><img src="image.png" class = "profile-image" alt="Profile Image" ></li>
-                                <li> <h2 class = "name" id = "introduction"> Jillian Berry </h2> </li>
-                                <li> <h2 class = "name" id = "introduction"> Computer Science Student </h2> </li>
-                                <li> <hr> </hr> </li>
-                                <li> <p class="intro-paragraph"> As a computer science student with a passion for data science, 
+                                <li> <h2 id="introduction"> Jillian Berry </h2> </li>
+                                <li> <h2 > CS Student </h2> </li>
+                                <li> <hr>  </li>
+                                <li> <p > As a computer science student with a passion for data science, 
                                 I utilized my experience in data integrity and knowledge of statistical analysis to increase busines efficiency. 
                                 I have experience in C++, Java, Python, R, and SQL. I have utilized both R and Python specifically for large datasets
                                 to extract important intelligence to increase efficiency of business.</p></li> 
@@ -302,10 +294,11 @@
                     </div>
                     
                 </section>
-                <section>
-                <section  class = "border"> 
                 <div>
-                    <h2 > Skills </h2> 
+                <div>
+                <section  class = "border">
+                <h2 > Skills </h2> 
+                <div> 
                     <hr> </hr>
                     <ul > 
                             <li class = "list-of-skills" > C++ </li>
@@ -317,10 +310,10 @@
                             <li class = "list-of-skills"> Statistical Analysis </li>
                             <li class = "list-of-skills"> Jupyter Notebook </li>
                         </ul>
-                    </div>
-                </section><section class = "border">
-               
-                        <div> <h2 id="career_summary"> Career Summary</h2>
+                    </section>
+                </div>
+           
+                        <div  class = "border"> <h2 id="career_summary"> Career Summary</h2>
                         <hr> </hr>
                         <table class="career-summary"> 
                         <caption>Career Summary</caption>
@@ -518,10 +511,10 @@
                     <a href="https://jberry1103.github.io/HW2/hiking_images" target="_blank" rel="noopener noreferrer">
                     <img src="hiking.JPG" alt="Hiking Image" class = "hiking"></a></div>
         </div>
-        </section>
+        
         </div>
         </div>
-    </section> 
+    
     
 </body>
 </html>
